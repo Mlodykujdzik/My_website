@@ -16,8 +16,8 @@ It showcases my various projects, ranging from simple HTML/CSS pages to more adv
 ## Demo
 
 You can visit the website here:  
-[My Personal Website](https://kujdzik.pl)
-*Site may differ from github repo cuz for now i'm udating it manually*
+[My Website](https://kujdzik.pl)  
+*Site may differ from github repo cuz for now im updating it manually*
 
 ---
 
