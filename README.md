@@ -17,7 +17,6 @@ It showcases my various projects, ranging from simple HTML/CSS pages to more adv
 
 You can visit the website here:  
 [My Personal Website](https://kujdzik.pl)  
-*(Replace with your actual domain or IP address.)*
 
 ---
 
