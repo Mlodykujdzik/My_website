@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+header {
+    background-color: #2a2a3c;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    padding: 0px;
+    text-align: center;
+    width: 0ch;
+    font-family: monospace;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(14) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from {
+        width: 14ch;
+    }
+}

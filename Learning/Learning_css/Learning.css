@@ -32,11 +32,21 @@ header h1 {
     justify-content: center;
 }
 
+.gallery a,
+.gallery a:link,
+.gallery a:visited,
+.gallery a:hover,
+.gallery a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .project {
     background-color: #2a2a3c;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
+    justify-content: center;
 }
 
 .project img {
@@ -47,6 +57,7 @@ header h1 {
 .project_section {
     padding: 40px;
     text-align: center;
+    justify-content: center;
 }
 
 footer {
