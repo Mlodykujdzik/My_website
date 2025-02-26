@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f; /* ciemne tło */
+    color: #fff; /* jasny kolor tekstu */
+    font-family: Arial, sans-serif;
+}
+
+/* -- Kontener, który będzie dzielił ekran na dwie kolumny -- */
+.container {
+    display: flex; /* aby mieć dwie kolumny obok siebie */
+    flex-wrap: wrap; /* aby w mniejszych ekranach zawijały się pod siebie */
+    padding: 20px;
+    gap: 20px;
+}
+
+/* -- Kolumna z kodem -- */
+.code-column {
+    background-color: #2a2a3c;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 5px;
+    min-width: 200px; /* minimalna szerokość kolumny */
+    overflow-x: auto; /* paski przewijania w poziomie, gdy kod jest za szeroki */
+}
+.code-column code {
+    color: #1abc9c; /* zielonkawy kolor dla kodu */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* -- Kolumna z podglądem inputów -- */
+.preview-column {
+    flex: 1; /* aby ta kolumna rosła i zajmowała pozostałe miejsce */
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: #2a2a3c;
+}
+
+/* -- Style dla samych inputów: możesz dowolnie modyfikować -- */
+.preview-column input {
+    display: block; /* każdy input w osobnej linii */
+    margin-bottom: 10px; /* odstęp między kolejnymi inputami */
+    height: 26px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000; /* kolor tekstu wewnątrz inputu */
+}
+
+/* Przycisk (button, submit, reset) – wypada wyróżnić innym kolorem */
+.preview-column input[type="button"],
+.preview-column input[type="submit"],
+.preview-column input[type="reset"] {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+}
