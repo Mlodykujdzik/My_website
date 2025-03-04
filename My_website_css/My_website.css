@@ -1,9 +1,16 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #1e1e2f;
     color: #fff;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .sidebar {
@@ -16,11 +23,7 @@ body {
     left: 0;
 }
 
-.sidebar a,
-.sidebar a:link,
-.sidebar a:visited,
-.sidebar a:hover,
-.sidebar a:active {
+.sidebar a {
     text-decoration: none;
     color: #fff;
 }
@@ -70,8 +73,8 @@ body {
 
 .icon {
     padding: 0px;
-    width: 24px;
-    height: 24px;
+    width: 1vw;
+    height: 1vh;
     display: flex;
     align-items: center;
     justify-content: center;
