@@ -6,16 +6,9 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #2a2a3c;
-    padding: 20px;
-    margin-left: 60px;
-    text-align: center;
-}
-
 .sidebar {
     background-color: #2a2a3c;
-    width: 80px;
+    width: 5vw;
     height: 100vh;
     position: fixed;
     transition: width 0.3s ease;
@@ -37,42 +30,7 @@ header {
 }
 
 .sidebar:hover {
-    width: 140px;
-}
-
-.menu {
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
-
-.menu li {
-    margin: 10%;
-}
-
-.menu li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.2s;
-}
-
-.menu li a svg {
-    fill: #fff;
-}
-
-.icon {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: #fff;
+    width: 10vw;
 }
 
 .sidebar svg {
@@ -81,21 +39,64 @@ header {
     height: 24px;
 }
 
+.sidebar:hover .text {
+    opacity: 1;
+}
+
+.menu {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li {
+    margin: 15%;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0px;
+    transition: background-color 0.2s;
+}
+
+.menu li a svg {
+    fill: #fff;
+}
+
+.icon {
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
+}
+
 .text {
-    margin-left: 10px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
+    padding: 1vh;
+    opacity: 0%;
     transition: opacity 0.3s, visibility 0.3s;
 }
 
-.sidebar:hover .text {
-    opacity: 1;
-    visibility: visible;
+header {
+    background-color: #2a2a3c;
+    padding: 1vh;
+    text-align: center;
 }
 
 h2 {
-    margin-left: 80px;
+    margin-left: 5vw;
+    padding: 20px;
+}
+
+.paragraph1 {
+    margin-left: 5vw;
     padding: 20px;
 }
 
@@ -108,9 +109,4 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-.paragraph1 {
-    margin-left: 80px;
-    padding: 20px;
 }
