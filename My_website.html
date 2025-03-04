@@ -3,80 +3,87 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kujdzik</title>
+        <title>Strona Główna</title>
+        <!-- Zaktualizuj ścieżkę do pliku CSS, jeśli używasz innej struktury katalogów -->
         <link rel="stylesheet" href="My_website_css/My_website.css" />
     </head>
-    <body>
-        <header>
-            <h1>Moje Projekty</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">O mnie</a></li>
-                    <li><a href="#projects">Projekty</a></li>
-                    <li><a href="#downloads">Pliki do pobrania</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section id="about" class="section">
-            <h2>O mnie</h2>
-            <div class="about-content">
-                <p>
-                    Cześć! Nazywam się Dominik, staram się realiozwać swoje
-                    wszelakie pomysły, które możesz zobaczyć poniżej.
-                </p>
-            </div>
-            <div class="about-content">
-                <img
-                    src="My_website_images/me.JPG"
-                    alt="Moje zdjęcie"
-                    class="about-image"
-                />
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projekty</h2>
-            <div class="gallery">
-                <div class="project">
-                    <img
-                        src="My_website_images/price_tracker.PNG"
-                        alt="Projekt 1"
-                    />
-                    <p>
-                        Projekt 1 - PriceTracker do śledzenia cen na stronie
-                        morele.net
-                    </p>
-                </div>
-                <div class="project">
-                    <img
-                        src="My_website_images/minecraft.PNG"
-                        alt="Projekt 2"
-                    />
-                    <p>Projekt 2 - Serwer Minecraft do gry ze znajomymi</p>
-                </div>
-                <div class="project">
-                    <!--<img src="img/ambilight.jpg" alt="Projekt 3">-->
-                    <p>Projekt 3 - Ambilight do TV (jeszcze nie skończony)</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="downloads" class="section">
-            <h2>Pliki do pobrania</h2>
-            <div class="about-content">
-                <p>Tak. Nic tu jeszcze nie ma</p>
-            </div>
-            <ul>
-                <li>
-                    <a href="file1.zip" download>Minecraft serwer backup</a>
-                </li>
-                <li><a href="file2.zip" download>Plik 2</a></li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>&copy; 2025</p>
-        </footer>
-    </body>
 </html>
+<body>
+    <!-- Pasek boczny -->
+    <aside class="sidebar">
+        <ul class="menu">
+            <!-- Portfolio -->
+            <li>
+                <a href="Portfolio/Portfolio.html">
+                    <!-- Tworzenie ikony w formie svg -->
+                    <span class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C7.03 2 3 6.03 3 11v6c0 1.66 1.34 3 3 3h12c1.66 
+                            0 3-1.34 3-3v-6c0-4.97-4.03-9-9-9zm0 2c3.85 0 7 
+                            3.15 7 7v6H5v-6c0-3.85 3.15-7 7-7zm0 3a2 2 0 100 
+                            4 2 2 0 000-4z"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text">Portfolio</span>
+                </a>
+            </li>
+            <!-- Projekty -->
+            <li>
+                <a href="Projects/Projects.html">
+                    <span class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M4 4h16v2H4V4zm0 5h16v2H4V9zm0 5h16v2H4v-2zm0 
+                            5h16v2H4v-2z"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text">Projekty</span>
+                </a>
+            </li>
+            <!-- Srewery -->
+            <li>
+                <a href="Servers/Servers.html">
+                    <span class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M3 5a2 2 0 012-2h14a2 2 0 012 2v3H3V5zm0 
+                                 11h18v3a2 2 0 01-2 2H5a2 2 0 01-2-2v-3zm0-5h18v3H3v-3z"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text">Serwery</span>
+                </a>
+            </li>
+            <!-- Nauka -->
+            <li>
+                <a href="Learning/Learning.html">
+                    <span class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2L1 9l11 7 9-5.73V17h2V9L12 2zM3.97 9L12 
+                                4.07 20.03 9 12 13.93 3.97 9zM11 16h2v6h-2z"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text">Nauka</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <header>
+        <h1>Strona Główna</h1>
+    </header>
+    <h2>
+        Witaj na mojej stronie! Jeśli chcesz się czegoś dowiedzieć wybierz jedną
+        z opcji z lewej strony
+    </h2>
+    <p class="paragraph1">
+        Stąd możesz przechodzić do innych stron, które stworzyłem.
+    </p>
+    <footer>
+        <p>&copy; 2025 - Dominik (Kujdzik)</p>
+    </footer>
+</body>
