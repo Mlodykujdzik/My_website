@@ -56,3 +56,17 @@ function updateProductList() {
         listElement.appendChild(row);
     });
 }
+function removeProduct(index) {
+    products.splice(index, 1);
+    updateProductList();
+}
+function calculateBestDiscount() {
+    products.sort((a, b) => {
+        if (b.originalPrice !== a.originalPrice) {
+            return b.originalPrice - a.originalPrice;
+        } else {
+            return b.discountedPrice - a.discountedPrice;
+        }
+    });
+    updateProductList();
+}
