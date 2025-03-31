@@ -70,30 +70,3 @@ document.addEventListener("mousemove", (e) => {
         sphere.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
 });
-
-/*document.addEventListener("DOMContentLoaded", () => {
-    const githubContainer = document.querySelector(".githubContent");
-    const repoOwner = "Mlodykujdzik";
-    const repoName = "My-website";
-
-    fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/commits?per_page=2`)
-        .then((res) => res.json())
-        .then((data) => {
-            githubContainer.innerHTML = ""; // wyczyść kontener
-
-            data.forEach((commit) => {
-                const el = document.createElement("div");
-                el.className = "commitBox";
-                el.innerHTML = `
-                  <p><strong>Autor:</strong> ${commit.commit.author.name}</p>
-                  <p><strong>Data:</strong> ${new Date(commit.commit.author.date).toLocaleString()}</p>
-                  <p><strong>Wiadomość:</strong> ${commit.commit.message}</p>
-              `;
-                githubContainer.appendChild(el);
-            });
-        })
-        .catch((err) => {
-            githubContainer.innerHTML = "<p>Nie udało się pobrać commitów</p>";
-            console.error(err);
-        });
-});*/
