@@ -3,137 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kujdzik</title>
-        <link rel="stylesheet" href="my_website.css" />
+        <title>My Personal Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
     <body>
-        <div class="gradient-background">
-            <div class="gradient-sphere sphere-1"></div>
-            <div class="gradient-sphere sphere-2"></div>
-            <div class="gradient-sphere sphere-3"></div>
-            <div class="particles-container" id="particles-container"></div>
-        </div>
-        <header>
-            <h1>Strona Główna</h1>
-        </header>
-        <div class="mainContainer">
-            <div class="mainRow">
-                <div class="navigationBar">
-                    <h1>Nawigacja</h1>
-                    <ul class="navigationList">
-                        <!-- Portfolio -->
-                        <li>
-                            <a href="about_me/me.html">
-                                <span class="icon">
-                                    <svg viewBox="0 0 24 24">
-                                        <path
-                                            d="M16 7C16 6.07003 16 5.60504 15.8978 5.22354C15.6204 4.18827 14.8117 3.37962 13.7765 3.10222C13.395 3 12.93 3 12 3C11.07 3 10.605 3 10.2235 3.10222C9.18827 3.37962 8.37962 4.18827 8.10222 5.22354C8 5.60504 8 6.07003 8 7M14 11.5C13.5 11.376 12.6851 11.3714 12 11.376M12 11.376C11.7709 11.3775 11.9094 11.3678 11.6 11.376C10.7926 11.4012 10.0016 11.7368 10 12.6875C9.99825 13.7004 11 14 12 14C13 14 14 14.2312 14 15.3125C14 16.1251 13.1925 16.4812 12.1861 16.5991C11.3861 16.5991 11 16.625 10 16.5M12 11.376L12 10M12 16.5995V18M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V11.8C21 10.1198 21 9.27976 20.673 8.63803C20.3854 8.07354 19.9265 7.6146 19.362 7.32698C18.7202 7 17.8802 7 16.2 7H7.8C6.11984 7 5.27976 7 4.63803 7.32698C4.07354 7.6146 3.6146 8.07354 3.32698 8.63803C3 9.27976 3 10.1198 3 11.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z"
-                                            stroke-width="1.7"
-                                            stroke-linecap="round"
-                                            style="stroke: #c9dae2; stroke-opacity: 1"
-                                            fill="none"
-                                        />
-                                    </svg>
-                                </span>
-                            </a>
-                            <a href="about_me/me.html">
-                                <span class="text">O mnie</span>
-                            </a>
-                        </li>
-                        <!-- Projekty -->
-                        <li>
-                            <a href="projects/projects.html">
-                                <span class="icon">
-                                    <svg viewBox="0 0 24 24">
-                                        <path
-                                            d="M9.99996 2C9.44768 2 8.99996 2.44772 8.99996 3V4.58178C8.30471 4.86318 7.65844 5.23923 7.07704 5.69365L5.70573 4.90193C5.47605 4.76932 5.20309 4.73338 4.94691 4.80202C4.69073 4.87067 4.47232 5.03827 4.33971 5.26795L2.33971 8.73205C2.06357 9.21034 2.22744 9.82193 2.70573 10.0981L4.07654 10.8895C4.02603 11.2528 3.99997 11.6236 3.99997 12C3.99997 12.3764 4.02603 12.7471 4.07654 13.1105L2.70574 13.9019C2.47605 14.0345 2.30846 14.2529 2.23981 14.5091C2.17117 14.7653 2.2071 15.0382 2.33971 15.2679L4.33971 18.732C4.47232 18.9617 4.69074 19.1293 4.94692 19.198C5.2031 19.2666 5.47605 19.2307 5.70574 19.0981L7.07706 18.3063C7.65846 18.7607 8.30472 19.1368 8.99996 19.4182V21C8.99996 21.5523 9.44768 22 9.99996 22H14C14.5522 22 15 21.5523 15 21V19.4182C15.6952 19.1368 16.3415 18.7607 16.9229 18.3063L18.2942 19.0981C18.5239 19.2307 18.7968 19.2666 19.053 19.198C19.3092 19.1293 19.5276 18.9617 19.6602 18.7321L21.6602 15.268C21.7928 15.0383 21.8288 14.7653 21.7601 14.5091C21.6915 14.253 21.5239 14.0345 21.2942 13.9019L19.9234 13.1105C19.9739 12.7472 20 12.3764 20 12C20 11.6236 19.9739 11.2528 19.9234 10.8895L21.2942 10.0981C21.7725 9.82191 21.9364 9.21032 21.6602 8.73203L19.6602 5.26793C19.5276 5.03824 19.3092 4.87065 19.053 4.802C18.7968 4.73336 18.5239 4.76929 18.2942 4.9019L16.9229 5.69364C16.3415 5.23922 15.6952 4.86318 15 4.58178V3C15 2.44772 14.5522 2 14 2H9.99996ZM11 5.28986V4H13V5.28986C13 5.73228 13.2907 6.12211 13.7147 6.24831C14.6258 6.51947 15.4475 7.00198 16.1223 7.64029C16.4436 7.94424 16.9264 8.00099 17.3095 7.77984L18.4282 7.13395L19.4282 8.866L18.3109 9.51107C17.9281 9.73205 17.7358 10.1781 17.8379 10.6081C17.9437 11.0538 18 11.5197 18 12C18 12.4803 17.9437 12.9462 17.8379 13.3919C17.7358 13.8219 17.9281 14.2679 18.3109 14.4889L19.4282 15.134L18.4282 16.866L17.3094 16.2201C16.9264 15.999 16.4436 16.0557 16.1222 16.3597C15.4475 16.998 14.6258 17.4805 13.7147 17.7516C13.2907 17.8778 13 18.2677 13 18.7101V20H11V18.7101C11 18.2677 10.7092 17.8778 10.2852 17.7516C9.37409 17.4805 8.55246 16.998 7.87767 16.3597C7.55635 16.0557 7.07352 15.999 6.69048 16.2201L5.57176 16.866L4.57176 15.134L5.68905 14.4889C6.0718 14.2679 6.26409 13.8219 6.16201 13.3919C6.05621 12.9462 5.99997 12.4803 5.99997 12C5.99997 11.5197 6.0562 11.0538 6.16201 10.6081C6.26409 10.1781 6.07179 9.73207 5.68905 9.51109L4.57176 8.86603L5.57176 7.13398L6.69046 7.77986C7.07351 8.00101 7.55633 7.94425 7.87766 7.6403C8.55245 7.00199 9.37409 6.51948 10.2852 6.24831C10.7092 6.12211 11 5.73228 11 5.28986ZM9.99998 12C9.99998 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 9.99998 13.1046 9.99998 12ZM12 8C9.79084 8 7.99998 9.79086 7.99998 12C7.99998 14.2091 9.79084 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8Z"
-                                            fill="#c9dae2"
-                                        />
-                                    </svg>
-                                </span>
-                            </a>
-                            <a href="projects/projects.html">
-                                <span class="text">Projekty</span>
-                            </a>
-                        </li>
-                        <!-- Serwery -->
-                        <li>
-                            <a href="servers/servers.html">
-                                <span class="icon">
-                                    <svg viewBox="0 0 24 24">
-                                        <path
-                                            d="M18 7H18.01M15 7H15.01M18 17H18.01M15 17H15.01M6 10H18C18.9319 10 19.3978 10 19.7654 9.84776C20.2554 9.64477 20.6448 9.25542 20.8478 8.76537C21 8.39782 21 7.93188 21 7C21 6.06812 21 5.60218 20.8478 5.23463C20.6448 4.74458 20.2554 4.35523 19.7654 4.15224C19.3978 4 18.9319 4 18 4H6C5.06812 4 4.60218 4 4.23463 4.15224C3.74458 4.35523 3.35523 4.74458 3.15224 5.23463C3 5.60218 3 6.06812 3 7C3 7.93188 3 8.39782 3.15224 8.76537C3.35523 9.25542 3.74458 9.64477 4.23463 9.84776C4.60218 10 5.06812 10 6 10ZM6 20H18C18.9319 20 19.3978 20 19.7654 19.8478C20.2554 19.6448 20.6448 19.2554 20.8478 18.7654C21 18.3978 21 17.9319 21 17C21 16.0681 21 15.6022 20.8478 15.2346C20.6448 14.7446 20.2554 14.3552 19.7654 14.1522C19.3978 14 18.9319 14 18 14H6C5.06812 14 4.60218 14 4.23463 14.1522C3.74458 14.3552 3.35523 14.7446 3.15224 15.2346C3 15.6022 3 16.0681 3 17C3 17.9319 3 18.3978 3.15224 18.7654C3.35523 19.2554 3.74458 19.6448 4.23463 19.8478C4.60218 20 5.06812 20 6 20Z"
-                                            stroke-linecap="round"
-                                            stroke-width="1.5"
-                                            style="stroke: #c9dae2; stroke-opacity: 1"
-                                            fill="none"
-                                        />
-                                    </svg>
-                                </span>
-                            </a>
-                            <a href="servers/servers.html">
-                                <span class="text">Serwery</span>
-                            </a>
-                        </li>
-                        <!-- Nauka -->
-                        <li>
-                            <a href="learning/learning.html">
-                                <span class="icon">
-                                    <svg viewBox="0 0 24 24">
-                                        <path
-                                            d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21"
-                                            stroke-width="1.7"
-                                            stroke-linecap="round"
-                                            style="stroke: #c9dae2; stroke-opacity: 1"
-                                            fill="none"
-                                        />
-                                    </svg>
-                                </span>
-                            </a>
-                            <a href="learning/learning.html">
-                                <span class="text">Nauka</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!--  koniec navigationBar-->
+        <div class="glass-container">
+            <nav>
+                <a href="#home">Strona główna</a>
+                <a href="#about">O mnie</a>
+                <a href="#projects">Projekty</a>
+                <a href="#hosting">Hosting</a>
+                <a href="#learning">Nauka</a>
+            </nav>
 
-                <div class="mainContent">
-                    <h2>ELO</h2>
-                    <p>Stąd możesz przechodzić do innych stron, które stworzyłem. Narazie są one w trakcie projektowania. Postęp prac możesz śledzić poniżej lub odwiedzić mój projekt na <a href="https://github.com/Mlodykujdzik/My_website">Githubie</a></p>
-                    <div class="progressContainer">
-                        <h3>Postęp prac:</h3>
-                        <div class="progressItem">
-                            <span>O mnie - 5%</span>
-                            <div class="progressBar">
-                                <div class="progress" style="width: 5%;"></div>
-                            </div>
-                        </div>
-                        <div class="progressItem">
-                            <span>Projekty - 30%</span>
-                            <div class="progressBar">
-                                <div class="progress" style="width: 30%;"></div>
-                            </div>
-                        </div>
-                        <div class="progressItem">
-                            <span>Serwery - 5%</span>
-                            <div class="progressBar">
-                                <div class="progress" style="width: 5%;"></div>
-                            </div>
-                        </div>
-                        <div class="progressItem">
-                            <span>Nauka - 20%</span>
-                            <div class="progressBar">
-                                <div class="progress" style="width: 20%;"></div>
-                            </div>
-                        </div>
-                </div>
-                <!--  koniec mainContent-->
-            </div>
-            <!--  koniec mainRow-->
-            <!--<div class="githubContent"></div> do dodania ostatnich commitów z githuba-->
+            <main id="app"></main>
         </div>
-        <!--  koniec mainContainer-->
-        <script src="my_website.js"></script>
+        <script src="router.js"></script>
     </body>
 </html>
