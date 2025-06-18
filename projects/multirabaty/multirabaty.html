@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kalkulator rabatów</title>
+        <link rel="stylesheet" href="multirabaty.css" />
+    </head>
+    <body>
+        <script src="multirabaty.js"></script>
+        <div class="container">
+            <h1>Kalkulator rabatów</h1>
+
+            <!-- Formularz dodawania produktu -->
+            <div class="form">
+                <input type="text" id="product-name" placeholder="Nazwa produktu" />
+                <input type="number" id="discounted-price" placeholder="Cena po promocji" />
+                <input type="number" id="original-price" placeholder="Cena przed promocją" />
+                <button onclick="addProduct()">Dodaj produkt</button>
+            </div>
+
+            <!-- Tabela z listą produktów -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa</th>
+                        <th>Cena po promocji</th>
+                        <th>Cena przed promocją</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list"></tbody>
+            </table>
+            <button class="calculate-btn" onclick="calculateBestDiscount()">Oblicz optymalny rabat</button>
+            <div id="results"></div>
+        </div>
+    </body>
+</html>
