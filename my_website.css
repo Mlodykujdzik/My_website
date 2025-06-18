@@ -148,7 +148,7 @@ header {
 }
 
 .navigationList {
-    padding: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +157,7 @@ header {
 }
 
 .navigationList li {
-    margin: 25%;
+    margin: 20px;
 }
 
 .navigationList li a {
@@ -167,8 +167,9 @@ header {
     text-decoration: none;
     color: #c9dae2;
 }
-.text {
-    padding: 1vh;
+
+text {
+    margin-top: 1vh;
 }
 
 .icon {

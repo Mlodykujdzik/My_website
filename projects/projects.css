@@ -150,11 +150,16 @@ header p {
     color: #c9dae2;
 }
 
+.gallery p {
+    text-align: center;
+    margin: 10px;
+}
+
 .project {
     background-color: rgba(49, 52, 255, 0.4);
     padding: 10px;
     border-radius: 5px;
-    width: 200px;
+    width: 400px;
 }
 
 .project img {
